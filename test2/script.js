@@ -35,10 +35,10 @@ document.getElementById("searchButton").addEventListener("click", () => {
 
     // 検索結果を表示
     resultDiv.innerHTML += `
-        <h2 style="width:700px; margin-left:auto; margin-right:auto; border:5px solid #A9A9A9; width: 150px; border-radius:5px;">${foundPokemon.japanese_name}</h2>
-        <p>${foundPokemon.japanese_yurai}<br><br></p>
-        <h2 style="width:700px; margin-left:auto; margin-right:auto; border:5px solid #A9A9A9; width: 150px; border-radius:5px;">${foundPokemon.english_name}</h2>
-        <p>${foundPokemon.english_yurai}<br><br><br><br><br></p>
+        <h2>${foundPokemon.japanese_name}</h2>
+        <p>${foundPokemon.japanese_yurai}<br><br><br></p>
+        <h2>${foundPokemon.english_name}</h2>
+        <p>${foundPokemon.english_yurai}<br><br><br></p>
     `;
 
     foundPokemon.varieties.forEach(variety => {
