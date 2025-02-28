@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモン図鑑</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 10px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        .pokemon {
+            margin-bottom: 20px;
+        }
+        .nav-buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ポケモン図鑑</h1>
+
+    <div class="toast" style="display:none; color: #32CD32; font-weight: bold;">検索完了！</div>
+    
+    <!-- 前へ・次へボタン -->
+    <div class="nav-buttons">
+        <button id="prevButton">◀ 前のポケモン</button>
+        <button id="nextButton">次のポケモン ▶</button>
+    </div>
+    <br>
+    <input type="text" id="pokemonInput" placeholder="図鑑番号 or 名前を入力" />
+
+    <button id="searchButton">検索</button>
+    
+
+    <div id="result"></div>
+
+    <!-- JavaScriptの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
+

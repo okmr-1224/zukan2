@@ -1,0 +1,38 @@
+button {
+    background-color: #F0E68C;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #FFD700;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.toast {
+    position: fixed;
+    top: 142px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none; /* デフォルトは非表示 */
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
